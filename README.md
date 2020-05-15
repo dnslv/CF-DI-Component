@@ -7,7 +7,7 @@ Just download the CFC file and add to you project.
 
 ## Usage
 
-Use Injectable.cfc file as base class and extend your other classes from it.
+Use Injectable.cfc file as base component and extend your other components from it.
 
 ```javascript
 
@@ -23,14 +23,14 @@ Then just use component property to define you dependency injection
 
 ```
 
-di:componet = Name of the injected component (use dot notation to provide path)
++ di:componet = Name of the injected component (use dot notation to provide path)
 
-di:scope    = LOCAL / REQUEST / SESSION / APPLICATION - Where to save the created instance. Local scope always create new instance.
++ di:scope    = LOCAL / REQUEST / SESSION / APPLICATION - Where to save the created instance. Local scope always create new instance.
 
-di:access   = PRIVATE / PUBLIC - defines whether the created object will be saved in VARIABLES (private) or THIS (public) scope.
++ di:access   = PRIVATE / PUBLIC - defines whether the created object will be saved in VARIABLES (private) or THIS (public) scope.
 
 
-### Don't forget to initilize the class
+### Don't forget to initilize the component
 ```javascript
      super.init();
 ```
